@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  client: one
+  is_manager: false
+  is_active: false
+
+two:
+  user: two
+  client: two
+  is_manager: false
+  is_active: false

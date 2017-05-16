@@ -1,0 +1,92 @@
+.login-logo,
+.register-logo {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 300;
+  a {
+    color: #444;
+  }
+}
+
+// .login-page,
+// .register-page {
+//   background: $gray;
+// }
+
+.login-box,
+.register-box {
+  width: 360px;
+  margin: 7% auto;
+  @media (max-width: $screen-sm) {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
+
+.login-box-body,
+.register-box-body {
+  background: $gray;
+  padding: 20px;
+  color: $text_color;
+  border-top: 0;
+  box-shadow: 0px 25px 15px -15px rgba(0, 0, 0, 0.3);
+  .form-control-feedback {
+    color: $brand-danger;
+  }
+  form {
+    margin-bottom: 10px;
+  }
+  a {
+    color: #bdc3c7;
+    &:hover {
+      color: #ecf0f1;
+    }
+  }
+  .btn {
+    background: rgba(0,0,0,0);
+    border: 0;
+    transition: all 0.3s ease-in-out;
+    box-shadow: none;
+    &:hover {
+      background: rgba(0,0,0,0.2);
+      color: #ecf0f1;
+      box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+  input[type=text], input[type=email], input[type=password], textarea {
+    &.form-control {
+      padding: 8px;
+      margin: 5px 1px 3px 0px;
+      transition: all 0.30s ease-in-out;
+      -webkit-transition: all 0.30s ease-in-out;
+      -moz-transition: all 0.30s ease-in-out;
+      -ms-transition: all 0.30s ease-in-out;
+      -o-transition: all 0.30s ease-in-out;
+      outline: none;
+      border: 1px solid #DDDDDD;
+      &:focus, &:focus {
+        // box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        box-shadow: 0 0 5px rgba(231, 76, 60, 0.7);
+        padding: 8px;
+        margin: 5px 1px 3px 0px;
+        // border: 1px solid rgba(81, 203, 238, 1);
+        border: 1px solid rgba(231, 76, 60, 0.9);
+      }
+    }
+  }
+}
+.login-box-msg,
+.register-box-msg {
+  margin: 0;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+.social-auth-links {
+  margin: 10px 0;
+}
+
+.form-control {
+  background: rgba(255,255,255,0.75);
+  border: 0;
+}

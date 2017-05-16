@@ -1,0 +1,11 @@
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade_b($color, $percentage:10%) {
+  @return mix(#000000, $color, $percentage);
+}
+@function shade_l($color, $percentage:10%) {
+  @return mix(#7A8288, $color, $percentage);
+}

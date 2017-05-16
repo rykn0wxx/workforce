@@ -1,0 +1,137 @@
+html {
+  font-size: 10px;
+}
+
+*,
+*:before, *::before, *::after, *:after {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.4;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+  background-color: $bg_color;
+  color: $text_color;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body,
+body.rykn0wxx {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-shadow: none !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+	font-size: 1.4rem;
+  line-height: 1.4;
+  background-color: $bg_color;
+  color: $text_color;
+  h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+		font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		margin: 0;
+		text-shadow: none;
+	}
+  p {
+		margin: 0 0 10px;
+	}
+  #wrapper,
+  .wrapper {
+  	overflow: hidden;
+    min-height: 100%;
+    position: relative;
+  	@include clearfx;
+  }
+  .content-wrapper {
+    position: relative;
+    z-index: 800;
+    min-height: 100%;
+  }
+  .content {
+    min-height: 350px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: $text_link;
+    @include transition(all 0.2s ease-in-out);
+    &:hover, &:active, &:focus {
+      outline: none;
+      text-decoration: none;
+      color: $text_link_hover;
+    }
+  }
+  .clrfix {
+    @include clearfx;
+  }
+  .row-fluid {
+    width: 100%;
+    *zoom: 1;
+    @include clearfx;
+  }
+  .main-header, #main-header {
+    z-index: 1030;
+  }
+  .main-sidebar, #main-sidebar {
+    z-index: 810;
+  }
+  .content-wrapper {
+    z-index: 800;
+  }
+  .main-footer {
+    text-align: center;
+    // padding: 20px 15px 25px 15px;
+    padding: 8px 25px;
+    color: #444;
+    border-top: 4px solid shade_b(#0E0F12, 15%);
+    background-color: shade_l(#0E0F12,10%);
+    background-image: url(back-bg.png);
+    width: 100%;
+    z-index: 750;
+    transition: all 0.3s ease-in-out;
+    &.opac-out {
+      opacity: 0;
+    }
+  }
+  p {
+    &.svg-holder {
+      transition: all 0.3s ease-in-out;
+      margin: 0;
+    }
+    &.info {
+      margin: 0;
+      line-height: 40px;
+      color: #83ab43;
+      // color: rgba($text_color, 0.5);
+    }
+  }
+  .content-section {
+    padding-top: 50px;
+    min-height: 450px;
+  }
+}
+
+#afoot {
+  height: 40px;
+  width: 38px;
+  path {
+    fill: darken(#434856, 30%);
+  }
+}

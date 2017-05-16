@@ -1,0 +1,70 @@
+.navbar-custom {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(white, .3);
+  background-color: black;
+  color: $text_color;
+  .navbar-toggle {
+    font-size: 16px;
+    padding: 4px 6px;
+    color: white;
+    &:focus, &:active {
+      outline: none;
+    }
+  }
+  .navbar-brand {
+    font-weight: 600;
+    color: $text_color;
+    &:focus {
+      outline: none;
+    }
+  }
+  a {
+    color: white;
+  }
+  .nav {
+    li {
+      a {
+        -webkit-transition: background .3s ease-in-out;
+           -moz-transition: background .3s ease-in-out;
+                transition: background .3s ease-in-out;
+        &:hover {
+          color: rgba(white, .8);
+          outline: none;
+          background-color: transparent;
+        }
+        &:focus, &:active{
+          outline: none;
+          background-color: transparent;
+        }
+        &.page-scroll {
+          color: darken($text_color, 5%);
+        }
+      }
+      &.active {
+        outline: none;
+        a {
+          background-color: rgba(white, .3);
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  @media(min-width:768px) {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+       -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+            transition: background .5s ease-in-out,padding .5s ease-in-out;
+    letter-spacing: 1px;
+    border-bottom: none;
+    background: transparent;
+    &.top-nav-collapse {
+      padding: 0;
+      border-bottom: 1px solid rgba(white, .3);
+      background: black;
+    }
+  }
+}

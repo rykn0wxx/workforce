@@ -1,0 +1,117 @@
+// sass-lint:disable-all
+$mdb-shadow-key-umbra-opacity: 0.2;
+$mdb-shadow-key-penumbra-opacity: 0.14;
+$mdb-shadow-ambient-shadow-opacity: 0.12;
+
+@mixin shadow-l1() {
+  box-shadow: 0px 25px 15px -15px rgba(0, 0, 0, 0.3);
+}
+@mixin shadow-l2() {
+  box-shadow: 0px 23px 30px -20px rgba(0, 0, 0, 0.4);
+}
+
+@mixin shadow-z-1(){
+  box-shadow:
+    0 1px 6px 0 rgba(0, 0, 0, 0.12),
+    0 1px  6px 0 rgba(0, 0, 0, 0.12);
+}
+
+@mixin shadow-z-1-hover(){
+  box-shadow:
+    0 5px 11px 0 rgba(0, 0, 0, 0.18),
+    0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+@mixin shadow-z-2(){
+  box-shadow:
+    0 8px 17px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@mixin shadow-z-3(){
+  box-shadow:
+    0 12px 15px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@mixin shadow-z-4(){
+  box-shadow:
+    0 16px 28px 0 rgba(0, 0, 0, 0.22),
+    0 25px 55px 0 rgba(0, 0, 0, 0.21);
+}
+
+@mixin shadow-z-5(){
+  box-shadow:
+    0 27px 24px 0 rgba(0, 0, 0, 0.2),
+    0 40px 77px 0 rgba(0, 0, 0, 0.22);
+}
+
+
+@mixin materializr ($colorVar, $accent: '500', $type: 'background-color') {
+  $colorMap: $colorVar + '-' + $accent;
+  $tmp: map-get($mdb-colors-map, $colorMap);
+  #{$type}: map-get($tmp, 'color');
+}
+
+@mixin mat-card-color ($color-palette) {
+  .mat-card {
+    &.#{$color-palette} {
+				h2 {
+						@include materializr($color-palette, '500');
+						&:after {
+								@include materializr($color-palette, '500', border-top-color);
+								@include materializr($color-palette, '500', border-right-color);
+								border-bottom-color: transparent;
+								border-left-color: transparent;
+						}
+						&:before {
+								border-top-color: transparent;
+								@include materializr($color-palette, '900', border-right-color);
+								@include materializr($color-palette, '900', border-bottom-color);
+								border-left-color: transparent;
+						}
+				}
+				&.mc-active {
+						h2 {
+								&:before {
+										border-top-color: transparent;
+										@include materializr($color-palette, '500', border-right-color);
+										@include materializr($color-palette, '500', border-bottom-color);
+										border-left-color: transparent;
+								}
+								&:after {
+										@include materializr($color-palette, '900', border-top-color);
+										@include materializr($color-palette, '900', border-right-color);
+										border-bottom-color: transparent;
+										border-left-color: transparent;
+								}
+						}
+				}
+				.mc-btn-action {
+						@include materializr($color-palette, '500');
+						&:hover {
+								@include materializr($color-palette, '900');
+						}
+				}
+				.mc-footer {
+						h4 {
+								@include materializr($color-palette, '900', color);
+						}
+						a {
+								@include materializr($color-palette, '900');
+						}
+				}
+				&.mc-active {
+						.mc-content {
+								@include materializr($color-palette, '50');
+						}
+						.mc-footer {
+								@include materializr($color-palette, '100');
+						}
+						.mc-btn-action {
+								@include materializr($color-palette, '50', border-color);
+						}
+				}
+		}
+  }
+}

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_project: one
+  name: MyString
+  is_active: false
+
+two:
+  parent_project: two
+  name: MyString
+  is_active: false

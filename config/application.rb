@@ -14,5 +14,8 @@ module Workforce
     config.active_support.escape_html_entities_in_json = true
 
     config.generators.javascript_engine = :js
+    config.to_prepare do
+      DeviseController.respond_to :html, :json
+    end
   end
 end
