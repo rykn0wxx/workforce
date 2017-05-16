@@ -11,4 +11,7 @@
 
 class ParentProject < ApplicationRecord
   has_many :projects
+
+  validates :name, presence: true
+  validates :is_active, presence: true
 end

@@ -13,4 +13,10 @@
 #
 
 class Region < ApplicationRecord
+  validates :name, presence: true
+  validates :code, presence: true
+  validates :label, presence: true
+  validates :path, presence: true
+  validates :is_active, presence: true
+
 end
