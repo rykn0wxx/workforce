@@ -1,11 +1,12 @@
 ActiveAdmin.register Project do
   active_admin_import validate: true,
+    headers_rewrites: { :'parent_project' => :parent_project_id },
     before_batch_import: -> (importer) {
-      parproject_names = importer.values_at(:parent_project)
+      parproject_names = importer.values_at(:parent_project_id)
       parents = ParentProject.where(name: parproject_names).pluck(:name, :id)
       options = Hash[*parents.flatten]
-      importer.batch_replace(:parent_project, options)
-    }
+      importer.batch_replace(:parent_project_id, options)
+    },
     back: proc { config.namespace.resource_for(Project).route_collection_path }
 
   config.sort_order = 'updated_at_asc'

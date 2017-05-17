@@ -19,4 +19,9 @@ class Client < ApplicationRecord
   belongs_to :project
   has_many :user_assignments
   has_many :users, through: :user_assignments
+
+  validates :name, presence: true
+  validates :code, presence: true
+  validates :is_active, presence: true
+  validates :project, presence: true
 end
