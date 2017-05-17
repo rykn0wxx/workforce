@@ -4,6 +4,8 @@ $output-bourbon-deprecation-warnings: false;
 @import "font-awesome";
 @import "bootstrap";
 
+@import "angular-material";
+
 @import "build/vars";
 @import "build/mixins/mixins";
 @import "build/fonts";
@@ -12,3 +14,4 @@ $output-bourbon-deprecation-warnings: false;
 @import "build/navbar";
 @import "build/footer";
 @import "build/registration";
+@import "build/panel";

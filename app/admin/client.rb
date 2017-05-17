@@ -1,4 +1,6 @@
 ActiveAdmin.register Client do
+  belongs_to :project
+  navigation_menu :project
   active_admin_import validate: true,
     headers_rewrites: { :'project_name' => :project_id },
     before_batch_import: -> (importer) {
@@ -32,7 +34,7 @@ ActiveAdmin.register Client do
     selectable_column
     # id_column
     column 'Name', :name, sortable: :name do |dModel|
-      link_to dModel.name, [:admin, dModel]
+      link_to dModel.name, [:admin, dModel.project, dModel]
     end
     column 'Short Code', :code, sortable: :code
     column 'Active', :is_active

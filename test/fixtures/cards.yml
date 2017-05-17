@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  block: one
+  headline: MyString
+  card_category: one
+  content: 
+  is_complete: false
+
+two:
+  block: two
+  headline: MyString
+  card_category: two
+  content: 
+  is_complete: false

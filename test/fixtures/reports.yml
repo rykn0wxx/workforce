@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project: one
+  name: MyString
+  is_published: false
+  is_active: false
+
+two:
+  project: two
+  name: MyString
+  is_published: false
+  is_active: false

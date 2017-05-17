@@ -1,4 +1,7 @@
 ActiveAdmin.register Project do
+  belongs_to :parent_project
+  navigation_menu :parent_project
+
   active_admin_import validate: true,
     headers_rewrites: { :'parent_project' => :parent_project_id },
     before_batch_import: -> (importer) {
@@ -30,7 +33,7 @@ ActiveAdmin.register Project do
     selectable_column
     # id_column
     column 'Name', :name, sortable: :name do |dModel|
-      link_to dModel.name, [:admin, dModel]
+      link_to dModel.name, [:admin, dModel.parent_project, dModel]
     end
     column 'Active', :is_active
     column 'Parent', :parent_project, sortable: :parent_project
@@ -38,6 +41,12 @@ ActiveAdmin.register Project do
       dModel.updated_at.strftime('%d-%b %Y')
     end
     actions
+  end
+
+  sidebar 'Project Clients', only: [:show, :edit] do
+    ul do
+      li link_to 'Clients', admin_project_clients_path(resource)
+    end
   end
 
 end

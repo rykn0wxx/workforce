@@ -1,0 +1,109 @@
+.rykn0wxx {
+  md-toolbar, .md-toolbar-tools {
+    min-height: 40px;
+    line-height: 40px;
+    height: 40px;
+    font-size: 16px;
+    h4 {
+      font-size: 16px;
+    }
+  }
+  .tb-board {
+    width: 340px;
+  	max-width: 340px;
+  	margin-right: 10px;
+  }
+  .tb-board-content {
+    text-align: left;
+    padding: 15px;
+    background: #52575C;
+    md-list-item {
+      min-height: 30px;
+      &:before, &::before {
+        min-height: 30px;
+      }
+    }
+  }
+  .tb-card {
+    border: none;
+  	cursor: pointer;
+  	cursor: grab;
+  	margin-bottom: 10px;
+  	padding: 0;
+  	transition: box-shadow 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: rgba(#f9f9f9, 0.9);
+    border-radius: 3px;
+    display: block;
+    min-width: 210px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 25px 15px -15px rgba(0, 0, 0, 0.3);
+    .tb-card-spacer {
+      height: 10px;
+      float: left;
+      position: relative;
+      width: 100%;
+    }
+    .tb-card-container {
+      padding: 0 10px;
+      float: left;
+      position: relative;
+      width: 100%;
+      .sn-card-headline {
+        width: calc(100% - 25px);
+        padding-top: 0;
+        margin-top: 0;
+        line-height: 1.1;
+        font-size: 14px;
+        color: #343d47;
+        word-wrap: break-word;
+        word-break: break-word;
+      }
+      .sn-card-category {
+        span {
+          height: 12px;
+          width: 12px;
+          border-radius: 12px;
+          display: inline-block;
+          float: left;
+          margin: 2px 5px 2px 0;
+        }
+      }
+      .sn-card-meta {
+        color: #81878e;
+        float: right;
+        justify-content: flex-end;
+        text-align: right;
+      }
+    }
+    &:hover {
+      box-shadow: 0px 23px 30px -20px rgba(0, 0, 0, 0.4);
+    }
+  }
+  .tb-component {
+    float: left;
+  	position: relative;
+  	color: #455464;
+  	cursor: default;
+  	display: inline-block;
+  	margin: 10px 0 0;
+  	width: 100%;
+  }
+  .defect {
+    background-color: #f95050;
+  }
+  .priority {
+    background-color: #278efc;
+  }
+  .feature {
+    background-color: #71e279;
+  }
+  .idea {
+    background-color: #fcc742;
+  }
+  .others {
+    background-color: #fc8a3d;
+  }
+}

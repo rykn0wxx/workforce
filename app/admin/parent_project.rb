@@ -31,5 +31,10 @@ ActiveAdmin.register ParentProject do
     actions
   end
 
+  sidebar 'Sub Projects', only: [:show, :edit] do
+    ul do
+      li link_to 'Projects', admin_parent_project_projects_path(resource)
+    end
+  end
 
 end

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  report: one
+  name: MyString
+  is_done: false
+
+two:
+  report: two
+  name: MyString
+  is_done: false

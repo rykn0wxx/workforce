@@ -1,0 +1,56 @@
+<% @reports.each do |report| %>
+
+  <div class="well" layout="row">
+
+    <% report.blocks.each do |block| %>
+
+      <div class="tb-board" layout="column">
+
+        <md-toolbar>
+          <div class="md-toolbar-tools">
+            <h4><%= block.name %></h4>
+            <span flex></span>
+            <md-button class="md-icon-button dropdown-toggle" data-toggle="dropdown">
+              <i class="material-icons">more_vert</i>
+            </md-button>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li><a href="#">Add Task</a></li>
+              <li><a href="#">Remove Card</a></li>
+            </ul>
+          </div>
+        </md-toolbar>
+
+        <div class="tb-board-content">
+          <md-list class="md-dense" flex>
+
+            <% block.cards.each do |card| %>
+              <md-list-item class="tb-card">
+                <div class="tb-card-spacer"></div>
+                <div class="tb-card-container clearfix">
+                  <div class="tb-component sn-card-headline"><%= card.headline %></div>
+                  <div class="tb-component sn-card-category">
+                    <span class="<%= card.card_category.name %>"></span>
+                  </div>
+                  <div class="tb-component sn-card-meta">
+                    <%= link_to 'Card Info', admin_block_card_path(block.id, card.id), :class => 'sn-card-detail' %>
+                    <p class="caption"><%= time_ago_in_words(card.created_at) %></p>
+                  </div>
+                </div>
+              </md-list-item>
+            <% end %>
+          </md-list>
+        </div>
+
+        <div class="tb-board-footer">
+          <!-- <md-button class="md-accent" md-autofocus flex>
+            Add me
+          </md-button> -->
+        </div>
+
+      </div> <!-- tb-board -->
+
+    <% end %>
+
+  </div> <!-- well -->
+
+<% end %>

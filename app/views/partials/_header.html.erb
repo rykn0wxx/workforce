@@ -19,7 +19,11 @@
 					<a href="#page-top"></a>
 				</li>
 				<li>
-					<a class="page-scroll" href="#about">About</a>
+					<%- if controller_name != 'home' %>
+					  <%= link_to 'Home', root_path, :class => 'page-scroll' %>
+					<% else %>
+						<%= link_to 'Sandbox', sandbox_path, :class => 'page-scroll' %>
+					<% end -%>
 				</li>
 				<li>
 					<a class="page-scroll" href="#download">Download</a>

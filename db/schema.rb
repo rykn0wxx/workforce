@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170516205603) do
+ActiveRecord::Schema.define(version: 20170517203428) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -43,6 +43,34 @@ ActiveRecord::Schema.define(version: 20170516205603) do
     t.index ["email"], name: "index_admin_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
     t.index ["username"], name: "index_admin_users_on_username", unique: true
+  end
+
+  create_table "blocks", force: :cascade do |t|
+    t.integer  "report_id"
+    t.string   "name"
+    t.boolean  "is_done"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["report_id"], name: "index_blocks_on_report_id"
+  end
+
+  create_table "card_categories", force: :cascade do |t|
+    t.string   "name"
+    t.boolean  "is_active",  default: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
+
+  create_table "cards", force: :cascade do |t|
+    t.integer  "block_id"
+    t.string   "headline"
+    t.integer  "card_category_id"
+    t.text     "content"
+    t.boolean  "is_complete"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.index ["block_id"], name: "index_cards_on_block_id"
+    t.index ["card_category_id"], name: "index_cards_on_card_category_id"
   end
 
   create_table "clients", force: :cascade do |t|
@@ -79,6 +107,16 @@ ActiveRecord::Schema.define(version: 20170516205603) do
     t.boolean  "is_active"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "reports", force: :cascade do |t|
+    t.integer  "project_id"
+    t.string   "name"
+    t.boolean  "is_published", default: false
+    t.boolean  "is_active",    default: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+    t.index ["project_id"], name: "index_reports_on_project_id"
   end
 
   create_table "user_assignments", force: :cascade do |t|
