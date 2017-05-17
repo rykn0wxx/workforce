@@ -17,4 +17,8 @@
 class Project < ApplicationRecord
   belongs_to :parent_project
   has_many :clients
+
+  validates :name, presence: true
+  validates :is_active, presence: true
+  validates :parent_project, presence: true
 end

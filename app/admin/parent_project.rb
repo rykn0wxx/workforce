@@ -1,6 +1,6 @@
 ActiveAdmin.register ParentProject do
 
-  active_admin_import validate: true
+  active_admin_import validate: true, back: proc { config.namespace.resource_for(ParentProject).route_collection_path }
 
   config.sort_order = 'updated_at_asc'
   permit_params :name, :is_active
@@ -13,7 +13,6 @@ ActiveAdmin.register ParentProject do
       f.inputs :name => 'Parent Project' do
         f.input :name, :label => 'Parent Name', :input_html => {:class => 'form-control' }
         f.input :is_active, :label => 'Active'
-        f.input :bulkfile, :label => 'Bulky', as: :file
       end
       f.actions
     end
@@ -30,13 +29,6 @@ ActiveAdmin.register ParentProject do
       dModel.updated_at.strftime('%d-%b %Y')
     end
     actions
-  end
-
-  controller do
-    def create
-      attrs = permitted_params[:name, :is_active]
-      @bulky_parentproject = ParentProject.create()
-    end
   end
 
 end

@@ -1,0 +1,160 @@
+parent_project,project_name,is_active
+Acosta_ServiceDesk,Acosta_ServiceDesk,TRUE
+Affinia,Affinia,TRUE
+Alcoa Europe,Alcoa_Bucharest,TRUE
+Alcoa Europe,Alcoa_Canada,TRUE
+Alcoa Europe,Alcoa_Scandinavia,TRUE
+Alcoa Europe,Arconic,TRUE
+Alcoa NOA,Alcoa,TRUE
+Alcoa NOA,Alcoa_HR,TRUE
+Alcoa NOA,Arconic_NOA,TRUE
+AlvarezMarsal,AlvarezMarsal,TRUE
+Amcor,Amcor,TRUE
+Amcor,Amcor_EMEA,TRUE
+AVID,MAUD_Manila,TRUE
+AVID,MAUD_Romania,TRUE
+AVID,Pinnacle,TRUE
+AVID PRO,AVID_PRO_Bucharest,TRUE
+AVID PRO,AVID_PRO_Manila,TRUE
+BCG Europe,BCG_Europe,TRUE
+BCGA,BCGA,TRUE
+Bio-Rad Global,BioRad,TRUE
+Brown-Forman,Brown_Forman,TRUE
+Cambridge_Associates,Cambridge_Associates,TRUE
+Career Education Corporation,CEC,TRUE
+CCH_ServiceDesk,CCH_ServiceDesk,TRUE
+Ceva_Global_Service_Desk,Ceva_Global_Service_Desk,TRUE
+Clariant Service Desk,Clariant,TRUE
+CLS ServiceDesk,CLS_ServiceDesk,TRUE
+CNH,CNH,TRUE
+CNHI_EMEA,CNHI_EMEA,TRUE
+CNHI_NAFTA,CNHI_NAFTA,TRUE
+Covance,Covance,TRUE
+Dana,Dana,TRUE
+DeVry_Stefanini,DeVry_Stefanini,TRUE
+Duke,Duke,TRUE
+Dunkin Brands Unified Service Desk,Dunkin_Brands_Unified_Service_Desk,TRUE
+Embraer,Embraer,TRUE
+Enel Green Power,Enel_Green_Power_NA,TRUE
+eNett,eNett,TRUE
+Epsilon,Epsilon,TRUE
+Essilor,Essilor,TRUE
+EuropCar,EuropCar,TRUE
+EVOQUA_ServiceDesk,Evoqua,TRUE
+Ferro,Ferro,TRUE
+Firmenich,Firmenich,TRUE
+Flexera,Flexera_Software,TRUE
+Ford,Ford,TRUE
+Goodman Service Desk,Goodman_Service_Desk,TRUE
+Hanon,Hanon,TRUE
+Heinz,Heinz,TRUE
+Heinz,Heinz_Bucharest,TRUE
+Heinz,Heinz_China,TRUE
+Heinz,Heinz_Manila,TRUE
+Heinz,Heinz_SaoPaolo,TRUE
+Heinz,Kraft_Heinz,TRUE
+Honda,Honda,TRUE
+Huron Consulting Group,Huron_Consulting_Group,TRUE
+Infineum,Infineum,TRUE
+ITSS,AbbVie_EOL,TRUE
+ITSS,Braskem,TRUE
+ITSS,Chrysler,TRUE
+ITSS,EURID,TRUE
+ITSS,GAVI,TRUE
+ITSS,IBO,TRUE
+ITSS,IBX,TRUE
+ITSS,Invengo,TRUE
+ITSS,Koneo_Express_Support,TRUE
+ITSS,MSC,TRUE
+ITSS,Outokumpu_Service_Desk,TRUE
+ITSS,Puratos,TRUE
+ITSS,SDC,TRUE
+ITSS,SG_Finans,TRUE
+ITSS,SGS,TRUE
+ITSS,Solvay,TRUE
+ITSS,Stryker,TRUE
+ITSS,Tagsys_RFID,TRUE
+ITSS,Terumo,TRUE
+ITSS,TTSD,TRUE
+Jaguar Land Rover,Jaguar_Land_Rover,TRUE
+John Deere,JDSD_China,TRUE
+John Deere,JDSD_Davenport,TRUE
+John Deere,JDSD_India,TRUE
+John Deere,JDSD_Mexico,TRUE
+John Deere,JDSD_NAM,TRUE
+John Deere,JDSD_Shanghai,TRUE
+John Deere,John_Deere,TRUE
+Joy Global,Joy_Global,TRUE
+KDS,KDS,TRUE
+Lakeside_Software,Lakeside_Software,TRUE
+Levi Strauss Europe,Levi_Strauss_Europe_ServiceDesk,TRUE
+Life Science Services,AiCure,TRUE
+Life Science Services,Aris_Global,TRUE
+Life Science Services,ArisGlobal,TRUE
+Life Science Services,Arrowhead,TRUE
+Life Science Services,Astellas,TRUE
+Life Science Services,Cambridge_Cognition,TRUE
+Life Science Services,Centocor,TRUE
+Life Science Services,Clinpal,TRUE
+Life Science Services,CRF_Health,TRUE
+Life Science Services,Icon,TRUE
+Life Science Services,Lupus_Research_Institute,TRUE
+Life Science Services,Medidata,TRUE
+Life Science Services,Merck,TRUE
+Life Science Services,Merck_Serono,TRUE
+Life Science Services,mProve,TRUE
+Life Science Services,Pfizer,TRUE
+Life Science Services,S_Clinica,TRUE
+Life Science Services,sanofi_aventis,TRUE
+Life Science Services,Sanofi_Pasteur,TRUE
+Life Science Services,Schering_Plough,TRUE
+Life Science Services,Servier,TRUE
+Life Science Services,Sorin,TRUE
+Life Science Services,Tudor_Reilly_Health,TRUE
+Linde,LINDE,TRUE
+Locomote,Locomote,TRUE
+Louis Vuitton North America,Louis_Vuitton_North_America,TRUE
+MasterCard,MasterCard,TRUE
+Miele_and_Cie,Miele_and_Cie,TRUE
+NBA_Service_Desk,NBA_Service_Desk,TRUE
+Nexans_Service_Desk,Nexans_Service_Desk,TRUE
+Nike_Service_Desk,Nike_Service_Desk,TRUE
+Novelis,Novelis,TRUE
+Novelis,Novelis_EMEA,TRUE
+Numonyx,Numonyx,TRUE
+Orbitz WW SD,Expedia,TRUE
+Orbitz WW SD,Orbitz_WW_SD,TRUE
+Philip_Morris,Philip_Morris,TRUE
+PROXIMUS,PROXIMUS,TRUE
+Reception Brussels,Reception_Brussels,TRUE
+Reydel,Reydel,TRUE
+Route One,Route_One,TRUE
+SAPA_Group,SAPA_Group,TRUE
+SNHU,SNHU,TRUE
+SSV-POS,Chrysler_HR,TRUE
+SSV-POS,Compressor_Controls_Corporation,TRUE
+SSV-POS,NCAA,TRUE
+SSV-POS,Subway,TRUE
+SSV-POS,TRW_Automotive,TRUE
+Stryker ITSD,Stryker_ITSD,TRUE
+Sulzer Service Desk,Sulzer_Service_Desk,TRUE
+Swagelok,Swagelok,TRUE
+Town Sports International,Town_Sports_International,TRUE
+Travelport,Apollo,TRUE
+Travelport,Galileo_APAC,TRUE
+Travelport,Galileo_Brussels,TRUE
+Travelport,Galileo_Bucharest,TRUE
+Travelport,Galileo_EMEA,TRUE
+Travelport,Galileo_LATAM,TRUE
+Travelport,Galileo_Manila,TRUE
+Travelport,Galileo_Shanghai,TRUE
+Travelport,Worldspan_Brussels,TRUE
+Travelport,Worldspan_Bucharest,TRUE
+Travelport,Worldspan_EMEA,TRUE
+Travelport,Worldspan_LATAM,TRUE
+TRW Global,TRW_Global,TRUE
+TTX Americas,TTX_Americas,TRUE
+Vallourec,Vallourec,TRUE
+Vallourec NA,Vallourec,TRUE
+Vallourec NA,Vallourec_NA,TRUE
+Visteon,Visteon,TRUE
