@@ -34,6 +34,7 @@ ActiveAdmin.register Client do
     column 'Name', :name, sortable: :name do |dModel|
       link_to dModel.name, [:admin, dModel]
     end
+    column 'Short Code', :code, sortable: :code
     column 'Active', :is_active
     column 'Project', :project, sortable: :project
     column 'Last Updated', :updated_at, :sortable => :updated_at do |dModel|
