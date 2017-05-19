@@ -1,0 +1,125 @@
+parent_project_id,record_date,language_id,calls_off,calls_ans,calls_ans30,calls_abn,calls_abn30,time_talk,time_hold,time_wrap,queue_ans,queue_max
+Acosta_ServiceDesk,5/1/2017,English,824,690,250,123,22,533606,16813,78961,342994,4379
+Acosta_ServiceDesk,5/1/2017,French,10,8,0,2,0,9733,1049,891,21977,6007
+Alcoa Europe,5/1/2017,English,34,32,28,2,2,20708,0,960,614,143
+Alcoa Europe,5/1/2017,French,109,105,101,4,3,38121,0,3266,1669,371
+Alcoa Europe,5/1/2017,Hungarian,15,12,8,3,2,4398,0,396,620,191
+Alcoa Europe,5/1/2017,Spanish,0,0,0,0,0,0,0,0,0,0
+Alcoa NOA,5/1/2017,English,494,473,427,21,14,251399,10320,19480,8318,371
+AlvarezMarsal,5/1/2017,English,29,29,29,0,0,15116,27,1458,243,12
+Amcor,5/1/2017,English,32,30,29,2,0,11303,972,1015,200,119
+Amcor,5/1/2017,Portuguese,1,1,1,0,0,206,0,60,8,8
+BCGA,5/1/2017,English,154,150,148,4,4,88064,3157,15112,1230,120
+BCGA,5/1/2017,French,5,5,5,0,0,3020,0,590,33,9
+BCGA,5/1/2017,German,6,6,5,0,0,2569,0,607,71,39
+Bio-Rad Global,5/1/2017,English,103,92,80,11,1,51114,2188,3351,2189,317
+Bio-Rad Global,5/1/2017,French,3,3,3,0,0,582,0,120,26,12
+Bio-Rad Global,5/1/2017,German,1,0,0,1,0,0,0,0,0,140
+Bio-Rad Global,5/1/2017,Japanese,5,4,4,1,1,3538,0,98,31,9
+Bio-Rad Global,5/1/2017,Mandar,7,7,7,0,0,2841,0,250,56,11
+Brown-Forman,5/1/2017,English,60,57,55,3,1,26325,0,3187,614,596
+Brown-Forman,5/1/2017,Spanish,2,2,2,0,0,1420,0,180,23,13
+Cambridge_Associates,5/1/2017,English,25,24,23,1,0,13196,983,690,549,397
+Career Education Corporation,5/1/2017,English,735,664,453,70,40,459197,34361,31446,25197,644
+CCH_ServiceDesk,5/1/2017,Bulgarian,4,4,3,0,0,865,0,185,68,39
+CCH_ServiceDesk,5/1/2017,Czech,4,3,3,1,0,1119,0,180,27,165
+CCH_ServiceDesk,5/1/2017,English,20,19,19,1,1,8865,0,727,193,18
+CCH_ServiceDesk,5/1/2017,French,1,1,0,0,0,310,0,60,91,91
+CCH_ServiceDesk,5/1/2017,German,0,0,0,0,0,0,0,0,0,0
+CCH_ServiceDesk,5/1/2017,Italian,3,3,3,0,0,2331,0,158,22,9
+CCH_ServiceDesk,5/1/2017,Polish,5,5,5,0,0,2148,0,188,57,17
+CCH_ServiceDesk,5/1/2017,Romanian,18,17,16,1,0,9246,0,633,169,103
+Ceva_Global_Service_Desk,5/1/2017,English,484,467,410,17,9,195056,9717,19932,13126,387
+Clariant Service Desk,5/1/2017,English,273,180,110,76,24,108312,1874,2758,35450,6376
+Clariant Service Desk,5/1/2017,German,12,12,10,0,0,17640,2556,130,170,49
+CLS ServiceDesk,5/1/2017,English,30,29,28,1,1,16766,139,785,360,151
+CNH,5/1/2017,English,202,197,175,5,1,98610,2972,11783,4707,603
+CNHI_EMEA,5/1/2017,Dutch,1,1,1,0,0,749,0,10,7,7
+CNHI_EMEA,5/1/2017,English,4,4,4,0,0,1248,0,40,23,8
+CNHI_EMEA,5/1/2017,German,3,2,2,1,1,612,0,20,12,10
+CNHI_EMEA,5/1/2017,Italian,1,1,1,0,0,1111,0,10,7,7
+CNHI_NAFTA,5/1/2017,English,54,54,51,0,0,33127,4992,2593,886,240
+Covance,5/1/2017,Chinese Mandarin,16,16,16,0,0,6797,0,121,88,9
+Covance,5/1/2017,English,496,479,450,17,4,318098,12037,6750,9542,935
+Covance,5/1/2017,French,18,18,18,0,0,7643,217,392,62,8
+Covance,5/1/2017,Japanese,9,9,6,0,0,2890,0,61,300,131
+Covance,5/1/2017,Spanish,2,2,2,0,0,1657,0,50,7,4
+DeVry_Stefanini,5/1/2017,English,850,809,640,41,11,557791,29209,42883,36113,911
+Duke,5/1/2017,English,10,10,10,0,0,2969,0,719,68,9
+Embraer,5/1/2017,English,118,111,94,7,3,74927,1504,5086,6326,3236
+Enel Green Power,5/1/2017,English,11,10,10,1,0,6808,0,600,34,644
+eNett,5/1/2017,English,22,21,19,1,0,6748,87,1260,810,862
+Epsilon,5/1/2017,English,172,159,119,13,5,125227,3238,8616,8864,732
+EVOQUA_ServiceDesk,5/1/2017,English,58,57,55,1,0,39482,2330,2412,716,134
+Ferro,5/1/2017,English,23,18,12,5,1,9119,158,621,4322,1434
+Ferro,5/1/2017,Spanish,1,0,0,1,1,0,0,0,0,0
+Firmenich,5/1/2017,English,38,38,38,0,0,17286,336,1955,210,8
+Firmenich,5/1/2017,French,8,8,8,0,0,3871,294,370,54,11
+Flexera,5/1/2017,English,4,3,2,0,0,1104,0,18,127,140
+Hanon,5/1/2017,English,8,7,7,1,1,2039,0,165,35,6
+Hanon,5/1/2017,Korean,1,1,1,0,0,179,0,22,8,8
+Heinz,5/1/2017,Chinese Mandarin,23,23,23,0,0,8860,0,460,184,13
+Heinz,5/1/2017,English,549,514,414,35,11,358236,583,9293,22492,738
+Heinz,5/1/2017,French,22,20,14,2,0,3996,0,378,2600,603
+Heinz,5/1/2017,Japanese,13,11,10,2,0,7764,0,207,162,73
+Heinz,5/1/2017,Portuguese,4,4,4,0,0,1244,0,80,10,3
+Honda,5/1/2017,English,189,186,175,3,2,73822,2269,10642,2436,400
+Huron Consulting Group,5/1/2017,English,49,48,43,0,0,28912,453,2213,1348,1722
+ITSS,5/1/2017,Core,9,9,9,0,0,4631,0,119,94,14
+ITSS,5/1/2017,Dutch,1,1,1,0,0,224,0,40,4,4
+ITSS,5/1/2017,English,50,48,43,2,0,14335,0,1147,1534,298
+ITSS,5/1/2017,French,1,1,1,0,0,892,76,6,7,7
+Life Science Services,5/1/2017,Chinese Mandarin,3,3,3,0,0,1261,0,180,24,10
+Life Science Services,5/1/2017,English,404,388,316,10,1,285437,39480,17753,21853,1070
+Life Science Services,5/1/2017,French,3,3,3,0,0,1955,405,80,7,3
+Life Science Services,5/1/2017,German,2,2,2,0,0,1686,256,16,8,4
+Life Science Services,5/1/2017,Japanese,31,31,31,0,0,22748,247,399,250,12
+Life Science Services,5/1/2017,Korean,3,3,3,0,0,457,102,144,28,12
+Life Science Services,5/1/2017,Portuguese,3,3,3,0,0,319,268,300,9,5
+Life Science Services,5/1/2017,Spanish,3,3,3,0,0,2222,0,180,9,5
+Linde,5/1/2017,English,226,211,177,15,3,156036,15394,1946,9865,905
+Linde,5/1/2017,French,2,1,0,1,0,992,0,10,1640,1640
+Linde,5/1/2017,Spanish,9,2,2,7,0,333,0,14,7,1158
+Louis Vuitton North America,5/1/2017,English,127,112,96,15,4,54028,61,4515,4716,750
+MasterCard,5/1/2017,English,2,2,2,0,0,285,0,19,15,10
+NBA_Service_Desk,5/1/2017,English,74,73,68,1,1,32041,1125,3460,1398,304
+Nike_Service_Desk,5/1/2017,English,120,105,102,15,7,67120,6012,8319,1135,558
+Nike_Service_Desk,5/1/2017,Portuguese,4,4,4,0,0,3774,7,360,47,17
+Nike_Service_Desk,5/1/2017,Spanish,4,4,4,0,0,2596,0,360,39,21
+Novelis,5/1/2017,Chinese Mandarin,4,4,4,0,0,1134,0,40,28,9
+Novelis,5/1/2017,English,35,35,35,0,0,17227,1319,1883,220,13
+Novelis,5/1/2017,French,4,4,4,0,0,2639,0,165,26,8
+Novelis,5/1/2017,Korean,9,9,9,0,0,3118,0,191,73,10
+Novelis,5/1/2017,Portuguese,17,14,14,3,1,6270,0,520,67,374
+Orbitz WW SD,5/1/2017,English,11,11,11,0,0,3036,12,334,79,10
+Philip_Morris,5/1/2017,Dutch,6,6,6,0,0,2691,0,60,56,11
+Philip_Morris,5/1/2017,English,87,76,68,11,6,25188,467,1491,3787,1383
+Philip_Morris,5/1/2017,Japanese,12,12,12,0,0,6716,0,530,75,9
+Philip_Morris,5/1/2017,Polish,0,0,0,0,0,0,0,0,0,0
+Philip_Morris,5/1/2017,Spanish,3,3,2,0,0,1651,0,15,79,45
+Reydel,5/1/2017,English,2,2,2,0,0,81,0,120,10,5
+Route One,5/1/2017,English,362,334,253,23,7,165207,27350,13871,18633,598
+Route One,5/1/2017,French,4,4,3,0,0,1321,0,180,96,70
+SAPA_Group,5/1/2017,Chinese Mandarin,8,6,6,2,0,1501,0,180,47,134
+SAPA_Group,5/1/2017,Danish,6,6,6,0,0,974,0,88,52,11
+SAPA_Group,5/1/2017,Dutch,4,4,4,0,0,1018,122,180,38,12
+SAPA_Group,5/1/2017,English,88,85,83,3,3,35427,0,2267,878,44
+SAPA_Group,5/1/2017,French,2,2,2,0,0,860,0,30,16,8
+SAPA_Group,5/1/2017,Hungarian,2,2,2,0,0,970,0,60,16,8
+Sulzer Service Desk,5/1/2017,Chinese Mandarin,40,38,35,2,1,14786,0,712,519,122
+Sulzer Service Desk,5/1/2017,English,89,88,87,1,1,53622,0,2819,1095,551
+Sulzer Service Desk,5/1/2017,German,14,12,12,2,0,8172,0,180,94,79
+Swagelok,5/1/2017,English,78,72,65,6,2,21255,146,4289,1339,393
+Town Sports International,5/1/2017,English,96,90,77,6,2,35848,2205,9188,2108,437
+Travelport,5/1/2017,Chinese Mandarin,5,5,5,0,0,1803,0,46,59,17
+Travelport,5/1/2017,Danish,3,3,2,0,0,1003,0,163,54,30
+Travelport,5/1/2017,Dutch,17,16,13,1,1,10267,546,650,503,174
+Travelport,5/1/2017,English,314,307,201,7,1,266872,49313,3349,31297,2815
+Travelport,5/1/2017,French,11,10,4,1,0,7238,1920,158,1588,428
+Travelport,5/1/2017,German,6,6,6,0,0,2539,0,90,38,9
+Travelport,5/1/2017,Hebrew,35,35,33,0,0,12670,1238,1417,376,68
+TRW Global,5/1/2017,English,408,398,329,10,4,264341,4550,8970,13263,362
+TRW Global,5/1/2017,German,2,2,2,0,0,416,0,60,6,3
+TRW Global,5/1/2017,Spanish,51,43,31,8,2,19320,0,882,1876,433
+Vallourec NA,5/1/2017,English,10,10,10,0,0,3219,0,493,70,9
+Visteon,5/1/2017,English,13,13,13,0,0,5711,0,582,51,12

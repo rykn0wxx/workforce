@@ -1,16 +1,15 @@
 # == Schema Information
 #
-# Table name: parent_projects
+# Table name: languages
 #
 #  id         :integer          not null, primary key
-#  name       :string           default(""), not null
+#  name       :string
 #  is_active  :boolean          default(FALSE)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class ParentProject < ApplicationRecord
-  has_many :projects
+class Language < ApplicationRecord
   has_many :phone_facts
 
   validates :name, presence: true

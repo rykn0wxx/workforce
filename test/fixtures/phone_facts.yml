@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  client: one
+  record_date: 2017-05-19
+  language: one
+  calls_off: 1
+  calls_ans: 1
+  calls_ans30: 1
+  calls_abn: 1
+  calls_abn30: 1
+  time_talk: 1
+  time_hold: 1
+  time_wrap: 1
+  queue_ans: 1
+  queue_max: 1
+
+two:
+  client: two
+  record_date: 2017-05-19
+  language: two
+  calls_off: 1
+  calls_ans: 1
+  calls_ans30: 1
+  calls_abn: 1
+  calls_abn30: 1
+  time_talk: 1
+  time_hold: 1
+  time_wrap: 1
+  queue_ans: 1
+  queue_max: 1

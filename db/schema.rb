@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170517203428) do
+ActiveRecord::Schema.define(version: 20170519212311) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -83,11 +83,38 @@ ActiveRecord::Schema.define(version: 20170517203428) do
     t.index ["project_id"], name: "index_clients_on_project_id"
   end
 
+  create_table "languages", force: :cascade do |t|
+    t.string   "name"
+    t.boolean  "is_active",  default: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
+
   create_table "parent_projects", force: :cascade do |t|
     t.string   "name",       default: "",    null: false
     t.boolean  "is_active",  default: false
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+  end
+
+  create_table "phone_facts", force: :cascade do |t|
+    t.integer  "parent_project_id"
+    t.date     "record_date",                   null: false
+    t.integer  "language_id"
+    t.integer  "calls_off",         default: 0, null: false
+    t.integer  "calls_ans",         default: 0, null: false
+    t.integer  "calls_ans30",       default: 0, null: false
+    t.integer  "calls_abn",         default: 0, null: false
+    t.integer  "calls_abn30",       default: 0, null: false
+    t.integer  "time_talk",         default: 0, null: false
+    t.integer  "time_hold",         default: 0, null: false
+    t.integer  "time_wrap",         default: 0, null: false
+    t.integer  "queue_ans",         default: 0, null: false
+    t.integer  "queue_max",         default: 0, null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.index ["language_id"], name: "index_phone_facts_on_language_id"
+    t.index ["parent_project_id"], name: "index_phone_facts_on_parent_project_id"
   end
 
   create_table "projects", force: :cascade do |t|
