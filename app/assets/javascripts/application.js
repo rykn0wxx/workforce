@@ -21,5 +21,11 @@
 //= require angular-rails-templates
 //= require angular-material
 
+//= require highstock.src
+//= require data.src
+//= require exporting.src
+//= require drilldown.src
+//= require offline-exporting.src
+
 //= require app
 //= require controllers/MudCtrl

@@ -28,4 +28,11 @@
 class PhoneFact < ApplicationRecord
   belongs_to :parent_project
   belongs_to :language
+
+  def self.total_group_by_day(start)
+    # phone_fact = where(record_date: start.beginning_of_day..Time.zone.now)
+    # phone_fact = phone_fact.group('date(record_date)')
+    # phone_fact = phone_fact.select('parent_project_id, sum(calls_off) as ttl_callsoff')
+    # phone_fact.group_by { |o| o.record_date.to_date }
+  end
 end

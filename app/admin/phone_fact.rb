@@ -7,16 +7,17 @@ ActiveAdmin.register PhoneFact do
   remove_filter :created_at, :updated_at
 
   active_admin_import validate: true,
+    headers_rewrites: { :'parent_project' => :parent_project_id, :'language' => :language_id },
     before_batch_import: -> (importer) {
-      parent_project_names = importer.values_at(:parent_project_id)
-      project_parents = ParentProject.where(name: parent_project_names).pluck(:name, :id)
-      project_options = Hash[*project_parents.flatten]
-      importer.batch_replace(:parent_project_id, project_options)
+      pp_names = importer.values_at(:parent_project_id)
+      pp = ParentProject.where(name: pp_names).pluck(:name, :id)
+      pp_options = Hash[*pp.flatten]
+      importer.batch_replace(:parent_project_id, pp_options)
 
-      parent_language_names = importer.values_at(:language_id)
-      language_parents = Language.where(name: parent_language_names).pluck(:name, :id)
-      language_options = Hash[*language_parents.flatten]
-      importer.batch_replace(:language_id, language_options)
+      pl_names = importer.values_at(:language_id)
+      pl_parents = Language.where(name: pl_names).pluck(:name, :id)
+      pl_options = Hash[*pl_parents.flatten]
+      importer.batch_replace(:language_id, pl_options)
     },
     back: proc { config.namespace.resource_for(PhoneFact).route_collection_path }
 

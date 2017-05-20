@@ -25,7 +25,18 @@ ActiveAdmin.register_page "Dashboard" do
 
       column do
         panel 'zChart' do
-          render partial: 'charts'
+          # proj_callsoff = PhoneFact.group(:parent_project).sum(:calls_off)
+          proj_callsoff = pfact_data
+          json_data = []
+          proj_callsoff.each do |key, val|
+            json_data << {
+              name: key,
+              data: val
+            }
+          end
+          render partial: 'charts', locals: {
+            projs: json_data.to_json
+          }
         end
       end
     end
