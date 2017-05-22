@@ -1,0 +1,32 @@
+<div class="row">
+  <%= render partial: 'admin/dashboard/charts' %>
+</div>
+<div class="row">
+
+  <div class="col-md-8 col-md-offset-2">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Project</th>
+          <th>Language</th>
+          <th>Offered</th>
+          <th>Answered</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for fct in @fact %>
+          <tr>
+            <td> <%= fct.record_date %> </td>
+            <td> <%= fct.parent_project.name %> </td>
+            <td> <%= fct.language.name %> </td>
+            <td> <%= fct.calls_off %> </td>
+            <td> <%= fct.calls_ans %> </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <%= will_paginate @fact, :class => 'apple_pagination' %>
+  </div>
+
+</div>

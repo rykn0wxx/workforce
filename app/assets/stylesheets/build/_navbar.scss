@@ -54,13 +54,15 @@
     }
   }
   @media(min-width:768px) {
-    padding: 20px 0;
+    padding: 10px 0;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
             transition: background .5s ease-in-out,padding .5s ease-in-out;
     letter-spacing: 1px;
     border-bottom: none;
     background: transparent;
+    @include linear-gradient($bg_color, tint_b($bg_color,5%));
+    @include box-shadow(0 15px 10px -10px rgba(0,0,0,0.4));
     &.top-nav-collapse {
       padding: 0;
       border-bottom: 1px solid rgba(white, .3);

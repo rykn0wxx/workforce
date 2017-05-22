@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_project: one
+  title: MyString
+  body: MyText
+  is_active: false
+
+two:
+  parent_project: two
+  title: MyString
+  body: MyText
+  is_active: false

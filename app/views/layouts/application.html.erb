@@ -9,7 +9,9 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
 
+    <%= yield(:header) %>
   </head>
 
   <body class="rykn0wxx">
@@ -23,6 +25,6 @@
 
     <%= render 'partials/footer' %>
 
-    <%= javascript_include_tag 'application' %>
+
   </body>
 </html>

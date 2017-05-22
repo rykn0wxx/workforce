@@ -5,6 +5,8 @@ ActiveAdmin.register Language do
   preserve_default_filters!
   remove_filter :created_at, :updated_at
 
+  menu parent: 'General Dimensions'
+
   active_admin_import validate: true, back: proc { config.namespace.resource_for(Language).route_collection_path }
 
   form do |f|

@@ -26,6 +26,7 @@
 //= require exporting.src
 //= require drilldown.src
 //= require offline-exporting.src
+//= require highcharts.theme
 
 //= require app
 //= require controllers/MudCtrl

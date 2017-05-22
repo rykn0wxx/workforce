@@ -27,6 +27,10 @@ $skinHeaderBck: #1e2a33;
     clear: both;
   }
 }
-@mixin admTrans {
-  transition: all 0.3s ease-in-out;
+@mixin admTrans($par: 'all') {
+  transition: #{$par} 0.3s ease-in-out;
+}
+
+.highcharts-point {
+  @include admTrans('fill');
 }

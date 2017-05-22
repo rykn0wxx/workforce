@@ -12,6 +12,7 @@
 class ParentProject < ApplicationRecord
   has_many :projects
   has_many :phone_facts
+  has_many :dashboards
 
   validates :name, presence: true
   validates :is_active, presence: true

@@ -5,6 +5,8 @@ ActiveAdmin.register Region do
   preserve_default_filters!
   remove_filter :created_at, :updated_at
 
+  menu parent: 'General Dimensions'
+
   form do |f|
     f.div :class => 'box_form' do
       f.inputs :name => 'Region Details' do

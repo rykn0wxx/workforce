@@ -1,5 +1,5 @@
 ActiveAdmin.register PhoneFact do
-
+  includes :parent_project, :language
   config.sort_order = 'updated_at_asc'
   permit_params :parent_project_id, :record_date, :language_id, :calls_off, :calls_ans, :calls_ans30, :calls_abn, :calls_abn30, :time_talk, :time_hold, :time_wrap, :queue_ans, :queue_max
 
@@ -20,5 +20,16 @@ ActiveAdmin.register PhoneFact do
       importer.batch_replace(:language_id, pl_options)
     },
     back: proc { config.namespace.resource_for(PhoneFact).route_collection_path }
+
+  index do
+    selectable_column
+    id_column
+    column 'Record Date', :record_date, :sortable => :record_date do |dModel|
+      dModel.record_date.strftime('%d-%b %Y')
+    end
+    column 'Project', :parent_project, sortable: :parent_project
+    column 'Language', :language, sortable: :language
+    actions
+  end
 
 end

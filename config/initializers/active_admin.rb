@@ -204,6 +204,7 @@ ActiveAdmin.setup do |config|
     config.register_javascript 'drilldown.src.js'
     config.register_javascript 'exporting.src.js'
     config.register_javascript 'offline-exporting.src.js'
+    config.register_javascript 'highcharts.theme.js'
 
   # == CSV options
   #
